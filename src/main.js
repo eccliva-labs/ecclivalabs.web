@@ -1,9 +1,9 @@
 import './style.css'
 
 // --- Countdown timer -------------------------------------------------
-// Set the launch date 21 days from when the page is first loaded.
-const LAUNCH_DATE = new Date()
-LAUNCH_DATE.setDate(LAUNCH_DATE.getDate() + 21)
+// Launch date: end of January next year (local midnight, Jan 31).
+const nextYear = new Date().getFullYear() + 1
+const LAUNCH_DATE = new Date(nextYear, 0, 31, 0, 0, 0)
 
 const daysEl = document.getElementById('days')
 const hoursEl = document.getElementById('hours')
