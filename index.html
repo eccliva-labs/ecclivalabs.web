@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eccliva — Coming Soon</title>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <div id="app">
+      <main class="card">
+        <p class="eyebrow">Eccliva</p>
+        <h1>We're cooking up<br /><span class="highlight">something great</span>.</h1>
+        <p class="subtitle">Our new site launches soon. Leave your email and we'll let you know the moment we're live.</p>
+
+        <div class="countdown" id="countdown">
+          <div class="unit"><span id="days">00</span><small>Days</small></div>
+          <div class="unit"><span id="hours">00</span><small>Hours</small></div>
+          <div class="unit"><span id="minutes">00</span><small>Minutes</small></div>
+          <div class="unit"><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+
+        <form id="notify-form" class="notify-form" novalidate>
+          <input type="email" id="email" placeholder="you@example.com" required aria-label="Email address" />
+          <button type="submit">Notify Me</button>
+        </form>
+        <p class="form-message" id="form-message"></p>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
